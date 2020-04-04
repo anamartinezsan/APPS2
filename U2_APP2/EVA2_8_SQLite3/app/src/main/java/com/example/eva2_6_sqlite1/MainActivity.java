@@ -59,7 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
                 c.moveToFirst();
                 etNombres.setText(c.getString(0));
-                etTelefono.setText(c.getString(1));} catch (Exception e) {
+                etTelefono.setText(c.getString(1));
+                }
+                catch (Exception e) {
                     e.printStackTrace();
                     Toast.makeText(MainActivity.this, "El objeto no existe", Toast.LENGTH_SHORT).show();
                 }
