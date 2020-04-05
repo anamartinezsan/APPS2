@@ -34,7 +34,7 @@ public class AyudaBD extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "MiBasedeDatos.db";
 
     public AyudaBD(Context context) {
-        super(context, Environment.getExternalStorageState()+ File.separator+
+        super(context, Environment.getExternalStorageDirectory()+ File.separator+
                 "/Database/"+File.separator+DATABASE_NAME, null, DATABASE_VERSION);
     }
 
